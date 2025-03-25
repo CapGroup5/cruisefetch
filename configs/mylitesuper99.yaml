@@ -1,0 +1,31 @@
+name: "mylitesuper_small3"
+batch_size: 64
+learning_rate: 0.001
+learning_rate_decay: 2
+min_learning_rate: 0.0001
+
+num_epochs: 1
+num_epochs_online: 1
+steps_per_epoch: 16000
+
+train_split: 0.2
+valid_split: 0.01
+multi_label: false
+sequence_loss: false
+
+sequence_length: 2
+offset_bits: 6
+prediction_depth: 0
+use_current_pc: false
+use_deltas: true
+pc_localized: true
+global_stream: false
+global_output: false
+
+pc_embed_size: 4
+page_embed_size: 8
+lstm_size: 8
+lstm_dropout: 0.1
+lstm_layers: 1
+num_experts: 2
+max_delta_pages: 8
